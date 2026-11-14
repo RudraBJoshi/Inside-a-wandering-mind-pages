@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
 
-// Fonts the WordPress theme loads (Astra + Elementor global fonts).
-const GOOGLE_FONTS = [
-  "https://fonts.googleapis.com/css?family=Varela:400|Arya:400%2C600&display=swap&ver=4.14.3",
-  "https://fonts.googleapis.com/css?family=Arya:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
-  "https://fonts.googleapis.com/css?family=Varta:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
-  "https://fonts.googleapis.com/css?family=Varela:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
-];
-
 export const metadata: Metadata = {
   title: "Home - Inside A Wandering Mind",
   description:
@@ -20,10 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-US">
       <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {GOOGLE_FONTS.map((href) => (
-          <link key={href} rel="stylesheet" href={href} />
-        ))}
+        {/* Self-hosted copies of the Google Fonts the theme used (Arya, Varela, Varta). */}
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
+        <link rel="stylesheet" href="/iawm/fonts.css" />
         {/* Everything the WordPress page loads (Astra, Elementor, theme + custom CSS), in original order. */}
         {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/iawm/site.css" />
