@@ -11,6 +11,9 @@ The same text is served at `/iawm/THIRD_PARTY_LICENSES.md`.
 | Varta (font) | `public/iawm/fonts/varta-*` | https://fonts.google.com/specimen/Varta, files via https://fontsource.org/fonts/varta | SIL OFL 1.1 |
 | JetBrains Mono (font) | `public/iawm/fonts/jetbrains-mono-*` | https://github.com/JetBrains/JetBrainsMono, files via https://fontsource.org/fonts/jetbrains-mono | SIL OFL 1.1 |
 | Space Grotesk (font) | `public/iawm/fonts/space-grotesk-*` | https://github.com/floriankarsten/space-grotesk, files via https://fontsource.org/fonts/space-grotesk | SIL OFL 1.1 |
+| Elementor eicons font | `public/iawm/vendor/eicons/*` | https://github.com/elementor/elementor (bundled with Elementor 4.3.6) | GPL-3.0 (as part of Elementor) |
+| WordPress MediaElement controls sprite | `public/iawm/vendor/mejs/mejs-controls.svg` | https://github.com/mediaelement/mediaelement, shipped in WordPress core | MIT (MediaElement.js) / GPL-2.0+ (WordPress) |
+| DVK Social Sharing icons (Danny van Kooten) | `public/iawm/vendor/dvk/*` | https://wordpress.org/plugins/dvk-social-sharing/ | GPL-compatible per WordPress.org plugin rules; exact version not confirmed. Referenced only by CSS rules for a share widget that is not rendered on any ported page |
 | Swiper 8.4.5 | `public/iawm/js/swiper.js`, `public/iawm/elementor/lib/swiper/v8/swiper.min.js` | https://github.com/nolimits4web/swiper | MIT |
 | Elementor 4.3.6 (frontend scripts and lazy-loaded widget chunks) | `public/iawm/js/elementor-*.js`, `public/iawm/elementor/js/chunks/*` | https://github.com/elementor/elementor | GPL-3.0 |
 | Astra theme (frontend script and CSS) | `public/iawm/js/astra.js`, `public/iawm/site.css` | https://wpastra.com, https://github.com/brainstormforce/astra | GPL-2.0-or-later |

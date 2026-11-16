@@ -51,11 +51,20 @@ export function getMeta(path: string): PageMeta | undefined {
  * Links to pages that have been copied point at this site; links to everything else keep pointing at
  * the live WordPress site until that page is copied too.
  */
+// Short URLs the live site redirects to their canonical page (mirrored in next.config.ts).
+const ALIASES: Record<string, string> = Object.fromEntries(
+  ["c1-stem", "c2-world-society", "c3-arts-entertainment", "c4-creative-works-fiction", "c5-personal-experiences"].map((slug) => [
+    `/${slug}/`,
+    `/categories/${slug}/`,
+  ]),
+);
+
 function localizeLinks(html: string): string {
   const ported = metas();
-  return html.replace(/href="https:\/\/inside-a-wandering-mind\.com(\/[^"#?]*)([#?][^"]*)?"/g, (m, path: string, rest = "") =>
-    ported.has(path) ? `href="${path}${rest}"` : m,
-  );
+  return html.replace(/href="https:\/\/inside-a-wandering-mind\.com(\/[^"#?]*)([#?][^"]*)?"/g, (m, path: string, rest = "") => {
+    const target = ALIASES[path] ?? path;
+    return ported.has(target) ? `href="${target}${rest}"` : m;
+  });
 }
 
 export function getPage(path: string): Page | undefined {
