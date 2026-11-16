@@ -1,0 +1,60 @@
+{
+ "path": "/departments/creative-works-department/",
+ "title": "Creative Works Department - Inside A Wandering Mind",
+ "description": "Under construction, check back later!",
+ "canonical": "https://inside-a-wandering-mind.com/departments/creative-works-department/",
+ "bodyClass": "wp-singular page-template-default page page-id-2541 page-child parent-pageid-2588 wp-custom-logo wp-embed-responsive wp-theme-astra ecc-default manage-default ast-desktop ast-page-builder-template ast-no-sidebar astra-4.14.3 group-blog ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-full-width-primary-header elementor-default elementor-kit-1160 elementor-page elementor-page-2541",
+ "css": [
+  "/iawm/css/departments__creative-works-department.css"
+ ],
+ "scripts": [
+  {
+   "src": "/iawm/js/jquery.min.js"
+  },
+  {
+   "src": "/iawm/js/jquery-migrate.min.js"
+  },
+  {
+   "code": "\n\t\t\t(function(){var mq=window.matchMedia('(max-width:921.98px)');function apply(isMobile){var b=document.body.classList;if(isMobile){b.add('ast-header-break-point');b.remove('ast-desktop');}else{b.remove('ast-header-break-point');b.add('ast-desktop');}}apply(mq.matches);if(mq.addEventListener){mq.addEventListener('change',function(e){apply(e.matches);});}else if(mq.addListener){mq.addListener(function(e){apply(e.matches);});}})();\n\t\t\t"
+  },
+  {
+   "code": "\n\t\t\t\t( () => {\n\t\t\t\t\tconst lazyloadRunObserver = () => {\n\t\t\t\t\t\tconst lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );\n\t\t\t\t\t\tconst lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {\n\t\t\t\t\t\t\tentries.forEach( ( entry ) => {\n\t\t\t\t\t\t\t\tif ( entry.isIntersecting ) {\n\t\t\t\t\t\t\t\t\tlet lazyloadBackground = entry.target;\n\t\t\t\t\t\t\t\t\tif( lazyloadBackground ) {\n\t\t\t\t\t\t\t\t\t\tlazyloadBackground.classList.add( 'e-lazyloaded' );\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tlazyloadBackgroundObserver.unobserve( entry.target );\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}, { rootMargin: '200px 0px 200px 0px' } );\n\t\t\t\t\t\tlazyloadBackgrounds.forEach( ( lazyloadBackground ) => {\n\t\t\t\t\t\t\tlazyloadBackgroundObserver.observe( lazyloadBackground );\n\t\t\t\t\t\t} );\n\t\t\t\t\t};\n\t\t\t\t\tconst events = [\n\t\t\t\t\t\t'DOMContentLoaded',\n\t\t\t\t\t\t'elementor/lazyload/observe',\n\t\t\t\t\t];\n\t\t\t\t\tevents.forEach( ( event ) => {\n\t\t\t\t\t\tdocument.addEventListener( event, lazyloadRunObserver );\n\t\t\t\t\t} );\n\t\t\t\t} )();\n\t\t\t"
+  },
+  {
+   "code": "var astra = {\"break_point\":\"921\",\"isRtl\":\"\",\"is_scroll_to_id\":\"1\",\"is_scroll_to_top\":\"1\",\"is_header_footer_builder_active\":\"1\",\"responsive_cart_click\":\"flyout\",\"is_dark_palette\":\"\"};\n//# sourceURL=astra-theme-js-js-extra"
+  },
+  {
+   "code": "var astra_search = {\"rest_api_url\":\"https://inside-a-wandering-mind.com/wp-json/\",\"search_posts_per_page\":\"5\",\"search_post_types\":[\"post\",\"e-floating-buttons\"],\"search_post_types_labels\":{\"post\":\"Posts\",\"e-floating-buttons\":\"Floating Elements\"},\"search_language\":\"\",\"no_live_results_found\":\"No results found\",\"search_results_label\":\"Search results\",\"search_page_condition\":\"\",\"search_page_post_types\":[],\"search_page_post_type_labels\":[]};\n//# sourceURL=astra-live-search-js-extra"
+  },
+  {
+   "src": "/iawm/js/astra.js"
+  },
+  {
+   "code": "\njQuery.uiBackCompat = true;\n//# sourceURL=jquery-ui-core-js-before\n"
+  },
+  {
+   "src": "/iawm/js/jquery-ui-core.js"
+  },
+  {
+   "src": "/iawm/js/jquery-ui-mouse.js"
+  },
+  {
+   "src": "/iawm/js/elementor-webpack-runtime.js"
+  },
+  {
+   "src": "/iawm/js/elementor-frontend-modules.js"
+  },
+  {
+   "code": "var elementorFrontendConfig = {\"environmentMode\":{\"edit\":false,\"wpPreview\":false,\"isScriptDebug\":false},\"i18n\":{\"shareOnFacebook\":\"Share on Facebook\",\"shareOnX\":\"Share on X\",\"pinIt\":\"Pin it\",\"download\":\"Download\",\"downloadImage\":\"Download image\",\"fullscreen\":\"Fullscreen\",\"zoom\":\"Zoom\",\"share\":\"Share\",\"playVideo\":\"Play Video\",\"previous\":\"Previous\",\"next\":\"Next\",\"close\":\"Close\",\"a11yCarouselPrevSlideMessage\":\"Previous slide\",\"a11yCarouselNextSlideMessage\":\"Next slide\",\"a11yCarouselFirstSlideMessage\":\"This is the first slide\",\"a11yCarouselLastSlideMessage\":\"This is the last slide\",\"a11yCarouselPaginationBulletMessage\":\"Go to slide\"},\"is_rtl\":false,\"breakpoints\":{\"xs\":0,\"sm\":480,\"md\":768,\"lg\":1025,\"xl\":1440,\"xxl\":1600},\"responsive\":{\"breakpoints\":{\"mobile\":{\"label\":\"Mobile Portrait\",\"value\":767,\"default_value\":767,\"direction\":\"max\",\"is_enabled\":true},\"mobile_extra\":{\"label\":\"Mobile Landscape\",\"value\":880,\"default_value\":880,\"direction\":\"max\",\"is_enabled\":false},\"tablet\":{\"label\":\"Tablet Portrait\",\"value\":1024,\"default_value\":1024,\"direction\":\"max\",\"is_enabled\":true},\"tablet_extra\":{\"label\":\"Tablet Landscape\",\"value\":1200,\"default_value\":1200,\"direction\":\"max\",\"is_enabled\":false},\"laptop\":{\"label\":\"Laptop\",\"value\":1366,\"default_value\":1366,\"direction\":\"max\",\"is_enabled\":false},\"widescreen\":{\"label\":\"Widescreen\",\"value\":2400,\"default_value\":2400,\"direction\":\"min\",\"is_enabled\":false}},\"hasCustomBreakpoints\":false},\"version\":\"4.3.6\",\"is_static\":false,\"experimentalFeatures\":{\"e_font_icon_svg\":true,\"additional_custom_breakpoints\":true,\"container\":true,\"e_optimized_markup\":true,\"nested-elements\":true,\"e_atomic_elements\":true,\"e_opt_in_v4\":true,\"import-export-customization\":true},\"urls\":{\"assets\":\"\\/iawm\\/elementor\\/\",\"ajaxurl\":\"https:\\/\\/inside-a-wandering-mind.com\\/wp-admin\\/admin-ajax.php\",\"uploadUrl\":\"https:\\/\\/inside-a-wandering-mind.com\\/wp-content\\/uploads\"},\"nonces\":{},\"swiperClass\":\"swiper\",\"settings\":{\"page\":[],\"editorPreferences\":[]},\"kit\":{\"active_breakpoints\":[\"viewport_mobile\",\"viewport_tablet\"],\"global_image_lightbox\":\"yes\",\"lightbox_enable_counter\":\"yes\",\"lightbox_enable_fullscreen\":\"yes\",\"lightbox_enable_zoom\":\"yes\",\"lightbox_enable_share\":\"yes\",\"lightbox_title_src\":\"title\",\"lightbox_description_src\":\"description\"},\"post\":{\"id\":2541,\"title\":\"Creative%20Works%20Department%20-%20Inside%20A%20Wandering%20Mind\",\"excerpt\":\"\",\"featuredImage\":false}};\n//# sourceURL=elementor-frontend-js-before"
+  },
+  {
+   "src": "/iawm/js/elementor-frontend.js"
+  },
+  {
+   "src": "/iawm/js/swiper.js"
+  },
+  {
+   "src": "/iawm/js/hoverintent.js"
+  }
+ ]
+}
